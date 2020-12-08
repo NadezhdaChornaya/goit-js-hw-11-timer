@@ -1,0 +1,28 @@
+.timer {
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+  color: black;
+  background-color: gainsboro;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+}
+
+.field {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.value {
+  font-size: 100px;
+  padding: 5px;
+  border-radius: 2px;
+  color: aliceblue;
+  background-color: black;
+}
+
+.label {
+  color: darkgray;
+  text-align: center;
+  font-size: 30px;
+}

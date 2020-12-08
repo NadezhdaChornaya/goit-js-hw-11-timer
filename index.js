@@ -3,7 +3,6 @@ const refs = {
     blockHours: document.querySelector('span[data-value="hours"]'),
     blockMins: document.querySelector('span[data-value="mins"]'),
     blockSecs: document.querySelector('span[data-value="secs"]'),
-    timerCounter: document.getElementById("timer-1"),
 };
 
 class CountdownTimer {
@@ -15,7 +14,6 @@ class CountdownTimer {
         const currentDate = Date.now();
         const time = this.targetDate - currentDate;
         this.updateTimer(time);
-        // this.timeStop(time);
     }, 1000);
 
     updateTimer(time) {
@@ -33,12 +31,6 @@ class CountdownTimer {
     pad(value) {
         return String(value).padStart(2, "0");
     }
-    // timeStop(time) {
-    //     if (time < 0) {
-    //         clearInterval(this.timer);
-    //         refs.timerCounter.textContent = "Finish";
-    //     }
-    // }
 }
 
 new CountdownTimer({
